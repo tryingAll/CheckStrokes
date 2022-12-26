@@ -1,0 +1,76 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+#logo{
+    height: 250px;
+    width: 350px;
+}
+#wrapper{
+    text-align: center;
+}
+h3{
+    color: #2F2B28;
+}
+.btn{
+    background-color: #FD2816;
+    margin-top: 16px;
+    padding: 8px 32px;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 20px;
+    margin-bottom: 32px;
+    border-style: none;
+}
+.btn a{
+    text-decoration: none;
+    color: white;
+}
+.btn:hover{
+    cursor: pointer;
+    border: 2px solid #FA6510;
+
+}
+#text-container{
+    padding: 40px;
+    max-width: 60 rem;
+    margin: 0 auto;
+}
+#text-container h3{
+    padding-top: 8px;
+    padding-bottom: 8px;
+}
+h2{
+    text-align: center;
+    color: #2F2B28;
+    font-size: 24px;
+}
+#form{
+    margin: 30px auto;
+    max-width: 500px;
+    display: block;
+
+    padding-left: 16px;
+}
+#form label{
+    display: block;
+    padding: 8px;
+}
+#form input{
+    padding: 8px;
+
+}
+#form input, textarea{
+    width: 90%;
+}
+textarea{
+    resize: none;
+}
+#sub_btn{
+    width: 80%;
+    text-align: center;
+    color: white;
+   margin-left: 40px;
+}
+
+

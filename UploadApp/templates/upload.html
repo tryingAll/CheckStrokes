@@ -1,0 +1,315 @@
+{% load static %}
+<!--<!DOCTYPE html>-->
+<!--<html lang="en">-->
+
+<!--<head>-->
+<!--    <meta charset="UTF-8">-->
+<!--    <meta http-equiv="X-UA-Compatible" content="IE=edge">-->
+<!--    <meta name="viewport" content="width=device-width, initial-scale=1.0">-->
+<!--    <title>Upload Files</title>-->
+<!--    <style>-->
+<!--        .center {-->
+<!--            margin-left: 100px;-->
+<!--            margin-right: 100px;-->
+<!--            border: 1px solid black;-->
+<!--        }-->
+<!--    </style>-->
+<!--</head>-->
+
+<!--<body>-->
+<!--    <table class="center">-->
+<!--        <tr>-->
+<!--            <th><img src="{% static "960.png" %}" alt="Girl in a jacket" width="100%" height="100%"></th>-->
+<!--        </tr>-->
+<!--        <tr>-->
+<!--            <td>-->
+<!--                <div class="block block-callout primary">-->
+<!--                    <h2 id="html-developer-job-description-template">HTML Developer Job Description Template</h2>-->
+<!--                    <p>We are looking for an experienced HTML developer to oversee the design, coding, and-->
+<!--                        implementation of website projects for our clients. In this role, you will be required to-->
+<!--                        collaborate with Website Designers on the initial web design, write the code, ensure-->
+<!--                        cross-platform compatibility, and provide user support.</p>-->
+<!--                    <p>To be successful as an HTML developer, you should have a good eye for detail and excellent-->
+<!--                        knowledge of front-end technologies. Ultimately a top-notch HTML developer should be-->
+<!--                        proficient in web design, a master coder, and someone with the skills to provide user-->
+<!--                        support.</p>-->
+<!--                    <h3 id="html-developer-responsibilities">HTML Developer Responsibilities:</h3>-->
+<!--                    <ul>-->
+<!--                        <li>Meeting with Web designers to discuss project design and layout.</li>-->
+<!--                        <li>Coding the entire HTML site from end to end.</li>-->
+<!--                        <li>Debugging code and front-end web applications.</li>-->
+<!--                        <li>Ensuring cross-platform compatibility.</li>-->
+<!--                        <li>Troubleshooting application errors.</li>-->
+<!--                        <li>Conducting website performance and usability tests.</li>-->
+<!--                        <li>Meeting publication deadlines.</li>-->
+<!--                        <li>Providing user support.</li>-->
+<!--                    </ul>-->
+<!--                    <h3 id="html-developer-requirements">HTML Developer Requirements:</h3>-->
+<!--                    <ul>-->
+<!--                        <li>Bachelor's degree in computer science, computer engineering, MIS, or similar.</li>-->
+<!--                        <li>At least 3 years' experience as an HTML Developer.</li>-->
+<!--                        <li>In-depth knowledge of front-end coding languages including HTML, CSS, JavaScript, and-->
+<!--                            XML.</li>-->
+<!--                        <li>Ability to troubleshoot coding and application errors.</li>-->
+<!--                        <li>Knowledge of web design and user application requirements.</li>-->
+<!--                        <li>Ability to meet strict publication deadlines.</li>-->
+<!--                        <li>Excellent communication and interpersonal skills.</li>-->
+<!--                        <li>Strong attention to detail.</li>-->
+<!--                    </ul>-->
+<!--                </div>-->
+<!--            </td>-->
+<!--        </tr>-->
+<!--        <tr>-->
+<!--            <td>-->
+<!--                <form method='post' enctype="multipart/form-data">-->
+<!--                    {% csrf_token %}-->
+<!--                    {{form.as_p}}-->
+<!--                    <input type="submit" value="Submit">-->
+<!--                </form>-->
+
+<!--            </td>-->
+<!--        </tr>-->
+<!--    </table>-->
+<!--</body>-->
+
+<!--</html>-->
+<!--<html>-->
+<!--    <head>-->
+<!--        <title>Signup Page</title>-->
+<!--        <style>-->
+<!--            body{-->
+<!--                font-family: Arial, Helvetica, sans-serif;-->
+<!--                background-color: white;-->
+<!--            }-->
+<!--            button{-->
+<!--                background-color: #4CAF50;-->
+<!--                width: 25%;-->
+<!--                padding: 15px;-->
+<!--                color: black;-->
+<!--                border: none;-->
+<!--                float: center;-->
+<!--                font-size: 15px;-->
+<!--            }-->
+<!--            label{-->
+<!--                font-size: 20px;-->
+<!--            }-->
+<!--            form{-->
+<!--                border: 3px solid #f1f1f1;-->
+<!--            }-->
+<!--            input[type=email],input[type=password]{-->
+<!--                width: 50%;-->
+<!--                font-size: 15px;-->
+<!--                margin: 8px 0px;-->
+<!--                padding: 12px 20px;-->
+<!--                display: inline-block;-->
+<!--                border: 2px solid green;-->
+<!--                box-sizing: border-box;-->
+<!--            }-->
+<!--            button:hover{-->
+<!--                opacity:0.7;-->
+
+<!--            }-->
+<!--            .container{-->
+<!--                padding: 50px;-->
+<!--                background-color: white;-->
+<!--            }-->
+<!--            .imgcontainer {-->
+<!--                text-align: center;-->
+<!--                margin: 24px 0 12px 0;-->
+<!--            }-->
+
+<!--            img.avatar {-->
+<!--                width: 20%;-->
+<!--                border-radius: 50%;-->
+<!--            }-->
+<!--        </style>-->
+<!--    </head>-->
+<!--    <body>-->
+<!--        <center><h1>Login Form</h1></center>-->
+<!--        <form action="#" method="post" enctype="multipart/form-data">-->
+<!--            {% csrf_token %}-->
+<!--            {% load static %}-->
+<!--            {{form.as_p}}-->
+<!--            <center><div class="container">-->
+<!--                <div class="imgcontainer">-->
+<!--                    <img src="{% static 'avatar_img1.jpg' %}" alt="Avatar" class="avatar">-->
+<!--                </div>-->
+<!--                <label for ='email'><b>UserEmail :  </b></label>-->
+<!--                <input type="email" placeholder="Enter email" name="email" float="right"  required><br>-->
+<!--                <label for='password'><b>Password : </b></label>-->
+<!--                <input type="password" placeholder="Enter Password" name="password" required><br>-->
+<!--                <button type="submit"><b>Login</b></button><br>-->
+<!--                Don't have accounct <a href="http://localhost:8000/signup/"> register </a>-->
+<!--            </div></center>-->
+<!--        </form>-->
+<!--    </body>-->
+<!--</html>-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="UploadApp/templates/style.css">
+    <title>IT Secure</title>
+    <style>
+        *{
+    margin: 0;
+    padding: 0;
+}
+#logo{
+    height: 250px;
+    width: 350px;
+}
+#wrapper{
+    text-align: center;
+}
+h3{
+    color: #2F2B28;
+}
+.btn{
+    background-color: #FD2816;
+    margin-top: 16px;
+    padding: 8px 32px;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 20px;
+    margin-bottom: 32px;
+    border-style: none;
+}
+.btn a{
+    text-decoration: none;
+    color: white;
+}
+.btn:hover{
+    cursor: pointer;
+    border: 2px solid #FA6510;
+
+}
+#text-container{
+    padding: 40px;
+    max-width: 60 rem;
+    margin: 0 auto;
+}
+#text-container h3{
+    padding-top: 8px;
+    padding-bottom: 8px;
+}
+h2{
+    text-align: center;
+    color: #2F2B28;
+    font-size: 24px;
+}
+#form{
+    margin: 30px auto;
+    max-width: 500px;
+    display: block;
+
+    padding-left: 16px;
+}
+#form label{
+    display: block;
+    padding: 8px;
+}
+#form input{
+    padding: 8px;
+
+}
+#form input, textarea{
+    width: 90%;
+}
+textarea{
+    resize: none;
+}
+#sub_btn{
+    width: 80%;
+    text-align: center;
+    color: white;
+   margin-left: 40px;
+}
+    </style>
+</head>
+<body>
+    <div id="wrapper">
+    <img src="{% static "company-logo.png" %}" id="logo">
+    <div>STIPEND – 50-75K per month</div>
+    <button class="btn"><a href="#form">Apply</a></button>
+</div>
+
+    <div id="text-container">
+        <h3>About Company</h3>
+        <p>We at IT Secure, transforms companies digital infrastructure into more reliable , trustworthy system .
+            We primarily focuses on Web Development (2.0 & 3.0) , Cloud Security , Machine learning , Deep Learning , Digital Assets Security , Data Security . Our built Centralized IT Infrastructure Management Software Product is widely used by big Fortune Companies . We are continuing our legacy from past 12 years & will continue in future also .
+            </p>
+        <h3>Requirements</h3>
+        <ol>
+            <li>Sound knowledge of Data Structures & Algorithms.</li>
+            <li>Must be proficient in object oriented programming language C++ or Python or Java.</li>
+            <li>Familiarity with HTML , CSS , JAVASCRIPT .</li>
+            <li>Good knowledge of Databases (Relational & Non-Relational )</li>
+            <li>Have worked on Machine Learning Projects </li>
+            <li>Basic knowledge of Machine Learning Algorithms (eg . Decision Tree , PCA , ICA , LDA etc).</li>
+            <li>Good to have Cloud exposure. </li>
+            <li>Basic core concepts like Operating Systems , Computer Networking , DBMS.</li>
+        </ol>
+        <h3>Eligibility</h3>
+        <ol>
+            <li>Bachelor of Engineering – CSE / IT /ECE </li>
+            <li>Batch 2023</li>
+            <li>CGPA- 8 or above</li>
+            <li>No Reappear Pending</li>
+            <li>Must be available for 6 months Winter Internship</li>
+
+        </ol>
+    </div>
+    <div id="form">
+    <h2>WORK WITH US</h2>
+
+        <form action="" method="post">
+             {% csrf_token %}
+            {% load static %}
+        <label class="name">First Name <br/>
+            <input type="text" name="fname" required>
+        </label>
+        <label class="name">Last Name <br/>
+            <input type="text" name="lname" required></label>
+        <label>Mobile  <br/>
+            <input type="tel" name="mob"  pattern="[0-9]{10}" required></label>
+
+        <label>Email <br/>
+            <input type="email" name="email" required></label>
+        <label>Permanent Address <br/>
+            <textarea name="p_address"  cols="30" rows="3" required></textarea></label>
+        <label>Current Address <br/>
+            <textarea name="c_address"  cols="30" rows="3" required></textarea></label>
+        <label>University <br/>
+            <input type="text" name="uname" required></label>
+        <label>CGPA <br/>
+            <input type="text" name="gpa" required></label>
+        <label>Resume Drive Link <br/>
+            <input type="url" name ="resume" required></label>
+        <label>Adhaar Card Number<br/>
+            <input type="tel"  name="adn" required></label>
+        <label>Adhaar Card Drive Link <br/>
+            <input type="url" name="adhaar"/></label>
+        <label>LinkedIn Profile <br/>
+            <input type="url" name="linkedin" required>
+        </label>
+        <label>Github Profile <br/>
+            <input type="url" name="github" required>
+        </label>
+        <label>leetcode <br/>
+            <input type="url" name="leetcode">
+        </label>
+        <label>Website Link <br/>
+            <input type="url" name="website">
+        </label>
+
+        <button id="sub_btn" class="btn" name="submit">Submit</button>
+    </form>
+    </div>
+
+
+</body>
+</html>
